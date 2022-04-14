@@ -1,0 +1,12 @@
+public class lightspeed {
+	public static void main(String[] args) {
+		long lightspeed;
+		long distance;
+		
+		lightspeed = 300000;
+		distance = lightspeed * 365 * 24 * 60 * 60;
+		
+		System.out.print(distance);
+	}
+
+}
