@@ -1,29 +1,26 @@
-package example;
-
 import java.util.Scanner;
 
-public class example2530 {
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		int hour =  sc.nextInt();
-		int min = sc.nextInt();
-		int sec = sc.nextInt();
-		
-		int after = sc.nextInt();
-		
-		sc.close();
-		
-		sec += after;
-		min += sec / 60;
-		
-		hour += min / 60;
-		min %= 60;
-		
-		hour %= 24;
-		
-		System.out.println(hour + " " + min + " " +sec);
-		
-	}
-
+public class Main{
+    public static void main(String[] args){
+    	Scanner in = new Scanner(System.in);
+    	
+    	int hour,min,sec,after;
+    	
+    	hour = in.nextInt();
+    	min = in.nextInt();
+    	sec = in.nextInt();
+    	
+    	after = in.nextInt();
+    	
+    	in.close();
+    	
+    	sec += after;
+    	min += sec/60;
+    	sec %= 60;
+    	hour += min/60;
+    	min %= 60;
+    	hour %= 24;
+    	
+    	System.out.println(hour + " " + min + " " + sec);
+    }
 }
